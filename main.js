@@ -9,12 +9,10 @@ recognition.onresult = function(event){
     var content = event.results[0][0].transcript;
     console.log(content)
     document.getElementById("textbox").innerHTML = content;
-    if(content == "Charizard is better than Pikachu."){
+    if(content == "Charizard is better than Pikachu." || content == "Charizard is better than Pikachu"){
         console.log("taking selfishie --- ");
         eat();
     }
-    
-
 }
 function eat(){
    var syntheat = window.speechSynthesis;
@@ -34,11 +32,11 @@ Webcam.set({
     image_format: 'png',
     png_quality:110
 })
-camera = document.getElementById("camera");
+camera = document.getElementById("cameraeRARARARARA");
 
 function take_a_sanpshot(){
     Webcam.snap(function(booger) {
-        document.getElementById("result").innerHTML = '<img id ="selfie_image" src="'+booger+'">';
+        document.getElementById("resolututtutuion").innerHTML = '<img id ="selfie_image" src="'+booger+'">';
 
     });
 }
